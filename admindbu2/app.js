@@ -36,6 +36,7 @@ tabla = document.getElementById('tabla');
 db.collection("miColeccion").onSnapshot((querySnapshot) => {
   tabla.innerHTML = ''; //Limpiar mi tabla
   querySnapshot.forEach((doc) => {
+      console.log(doc);
       console.log(`${doc.id} => ${doc.data().last}`);
       tabla.innerHTML += `
       <tr>
