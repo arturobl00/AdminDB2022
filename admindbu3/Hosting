@@ -1,0 +1,116 @@
+C:\wamp64\www\AdminBD\admindbu3>npm install -g firebase-tools
+C:\Users\artur\AppData\Roaming\npm\firebase -> C:\Users\artur\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+
+> re2@1.17.3 install C:\Users\artur\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\re2
+> install-from-cache --artifact build/Release/re2.node --host-var RE2_DOWNLOAD_MIRROR --skip-path-var RE2_DOWNLOAD_SKIP_PATH --skip-ver-var RE2_DOWNLOAD_SKIP_VER || npm run rebuild
+
+Trying https://github.com/uhop/node-re2/releases/download/1.17.3/win32-x64-83.br ...
+Writing to build/Release/re2.node ...
+Done.
+
+> puppeteer@9.0.0 install C:\Users\artur\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\puppeteer
+> node install.js
+
+Downloading Chromium r869685 - 166.1 Mb [====================] 100% 0.0s
+Chromium (869685) downloaded to C:\Users\artur\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\puppeteer\.local-chromium\win64-869685
+
+> core-js@3.6.5 postinstall C:\Users\artur\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> protobufjs@6.11.2 postinstall C:\Users\artur\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\protobufjs
+> node scripts/postinstall
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\firebase-tools\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ firebase-tools@10.7.1
+added 1304 packages from 1207 contributors in 187.692s
+
+C:\wamp64\www\AdminBD\admindbu3>firebase login
+i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+? Allow Firebase to collect CLI usage and error reporting information? Yes
+i  To change your data collection preference at any time, run `firebase logout` and log in again.
+
+Visit this URL on this device to log in:
+https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=779333921&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+
+Waiting for authentication...
+
++  Success! Logged in as 4rthurbl00@gmail.com
+
+C:\wamp64\www\AdminBD\admindbu3>firebase init   
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\wamp64\www\AdminBD\admindbu3
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+? Are you ready to proceed? Yes
+? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices
+. Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add, 
+but for now we'll just set up a default project.
+
+i  Using project admindb-80cc3 (AdminDB)
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? ./
+? Configure as a single-page app (rewrite all urls to /index.html)? No
+? Set up automatic builds and deploys with GitHub? No
++  Wrote .//404.html
+? File .//index.html already exists. Overwrite? No
+i  Skipping write of .//index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+
+C:\wamp64\www\AdminBD\admindbu3>firebase deploy 
+
+=== Deploying to 'admindb-80cc3'...
+
+i  deploying hosting
+i  hosting[admindb-80cc3]: beginning deploy...
+i  hosting[admindb-80cc3]: found 5 files in ./
++  hosting[admindb-80cc3]: file upload complete
+i  hosting[admindb-80cc3]: finalizing version...
++  hosting[admindb-80cc3]: version finalized
+i  hosting[admindb-80cc3]: releasing new version...
++  hosting[admindb-80cc3]: release complete
+
++  Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/admindb-80cc3/overview
+Hosting URL: https://admindb-80cc3.web.app
+
+C:\wamp64\www\AdminBD\admindbu3>
